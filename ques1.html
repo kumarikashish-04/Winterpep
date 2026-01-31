@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Q5</title>
+</head>
+<body>
+
+<div id="container">
+    <ul>
+        <li>Rahul – 85</li>
+        <li>Priya – 92</li>
+        <li>Aman – 78</li>
+    </ul>
+</div>
+
+<script>
+    // Q5: Change background color using DOM manipulation
+
+    const listItems = document.querySelectorAll("li");
+
+    listItems.forEach((li, index) => {
+        li.style.backgroundColor = "lightblue";
+        li.style.padding = "10px";
+        li.style.margin = "5px";
+        li.style.listStyle = "none";
+    });
+</script>
+
+</body>
+</html>

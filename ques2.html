@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Heading DOM</title>
+
+    <!-- Optional CSS to show classList effect -->
+    <style>
+        .main-heading {
+            font-family: Arial, sans-serif;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="heading"></h1>
+
+<script>
+    // 1. Select the h1 element using id
+    const heading = document.getElementById("heading");
+
+    // 2 & 7. Add text dynamically on page load
+    heading.textContent = "Welcome to JavaScript DOM Manipulation";
+
+    // 3. Change text color
+    heading.style.color = "white";
+
+    // 4. Change background color
+    heading.style.backgroundColor = "teal";
+
+    // 5. Align text to center
+    heading.style.textAlign = "center";
+
+    // Extra styling for better look
+    heading.style.padding = "15px";
+
+    // 6. Add CSS class using classList
+    heading.classList.add("main-heading");
+</script>
+
+</body>
+</html>

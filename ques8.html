@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            height: 500px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+        .badge {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h2 {
+            margin: 10px 0;
+            color: black;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .cart-btn, .buy-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart-btn {
+            background-color: #ff9800;
+            color: white;
+        }
+        .buy-btn {
+            background-color: #4caf50;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D"
+             alt="Wireless Headphones">
+        <span class="badge">Sale</span>
+        <div class="card-content">
+            <h2>Wireless Headphones</h2>
+            <p>High quality wireless headphones with noise cancellation.</p>
+            <h3>₹2,999</h3>
+
+            <div class="buttons">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToCart() {
+        alert("Product added to cart!");
+    }
+
+    function buyNow() {
+        alert("Proceeding to buy the product!");
+    }
+</script>
+</body>
+</html>
